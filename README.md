@@ -83,11 +83,11 @@ Download and install (if you already have these tools installed just check the v
 2. Check you have , .Net 7 (2024: .Net 8 will be OK too, I think), Node v18, VS 2022 (or latest VS Code + ionide or Rider) installed.
    * In a terminal window: `node -v` shows Node version. `dotnet --version` shows Dotnet version.
 
-4. Navigate to the project root directory from the master-before-new-simulation branch (which contains this README) in a command-line interpreter, or start one from directory context menu.
+4. Navigate to the project root directory from the master branch (which contains this README) in a command-line interpreter, or start one from directory context menu.
 
 5. Run `build.cmd` under Windows or `build.sh` under linux or macos. This will download and install all dependencies then launch the application in dev mode with HMR.
    
-6. Once Issie has loaded, stop the master-before-new-simulation Issie with `Ctrl+C` and switch to the master branch and run `npm install`.
+6. Once Issie has loaded, stop the master Issie with `Ctrl+C` and run `npm install`.
   
   * HMR: the application will automatically recompile and update while running if you save updated source files
   * To initialise and reload: `File -> reload page`
@@ -97,7 +97,7 @@ Download and install (if you already have these tools installed just check the v
   * If you have changed `packet.json` and therefore need to remake the lock file `paket-lock.json` use `npm install`.
   * On windows `build killzombies` will terminate orphan node and dotnet processes which occasionally happen using this build chain after unusual terminations (maybe no longer needed?)
 
-NB - in parallel with the above compilation, Issie code will always compile without errors (but not run) under dotnet, for example by building it from Visuak Studio. Compilation should be identical but when unsure why there is an error it is **very helpful** to build the current code under VS or VSC and get easier to find error messages. Similarly, VS or VSC can be used with confidence to refactor code, testing with compilation. Building under VS or VSC cannot work because the code depends on electron and Node APIs to work.
+NB - in parallel with the above compilation, Issie code will always compile without errors (but not run) under dotnet, for example by building it from Visual Studio. Compilation should be identical but when unsure why there is an error it is **very helpful** to build the current code under VS or VSC and get easier to find error messages. Similarly, VS or VSC can be used with confidence to refactor code, testing with compilation. Building under VS or VSC cannot work because the code depends on electron and Node APIs to work.
 
 #### Node management details
 
