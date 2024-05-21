@@ -1,0 +1,2968 @@
+<!DOCTYPE html>
+<html lang="en" data-root="/issie/">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Renderer" name="author">
+    <!-- Opengraph properties (https://ogp.me/) -->
+    <meta property="og:site_name" content="issie">
+    <meta property="og:title" content="Msg (issie)" />
+    <meta property="og:url" content="/issie/{{fsdocs-source-basename}}.html">
+    <meta property="og:type" content="website" />
+    <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="/issie/">
+    <meta name="twitter:title" content="Msg (issie)">
+    
+    <title>Msg (issie) | issie</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="/issie/img/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
+    <script type="application/javascript" src="/issie/content/fsdocs-theme-set-dark.js"></script>
+    <link href="/issie/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
+    <link href="/issie/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
+    
+    
+</head>
+<body class="api-docs">
+<header>
+    <div class="start">
+        <div id="menu-toggle">
+            <iconify-icon class="icon closed" height="22" icon="eva:menu-fill" width="22"></iconify-icon>
+            <iconify-icon class="icon open" height="22" icon="mi:close" width="22"></iconify-icon>
+            <input type="checkbox" name="mobile-menu" />
+            <ul class="menu">
+                <li class="nav-header">Links</li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/tomcl/issie/blob/master/LICENSE.md">License</a>
+                </li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/tomcl/issie/releases/">Release
+                    Notes</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/tomcl/issie/tree/master/">Source
+                    Repository</a></li>
+                <li class="nav-header ">
+  Documentation
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/verilogComp.html">
+    Verilog Component
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/contact.html">
+    Contact
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/userGuide.html">
+    User Guide
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/coolFeatures.html">
+    Features
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/ReadMeCodeAnalysis.html">
+    DrawBlock Analysis
+
+  </a>
+</li>             
+<li class="nav-header ">
+  Updates
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2021-07-04-Issie-v2-1-0.html">
+    ISSIE v2.1.0
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-05-04-Issie-v3-0-0.html">
+    ISSIE v3.0.0
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-09-20-Issie-v3-0-1.html">
+    ISSIE v3.0.1
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-12-25-Issie-v3-0-9.html">
+    ISSIE v3.0.9  - Happy Christmas!
+  </a>
+</li>
+                <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/issie/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+            </ul>
+        </div>
+        <a href="/issie/">
+            <img alt="Header menu logo" src="/issie//issieIcon.png">
+            <strong>issie</strong>
+        </a>
+    </div>
+    <div class="end">
+        <a href="https://github.com/tomcl/issie/tree/master/" target="_blank">
+            <iconify-icon icon="uil:github" width="26" height="26"></iconify-icon>
+        </a>
+        <iconify-icon id="search-btn" icon="carbon:search" class="search" width="24" height="24"></iconify-icon>
+        <fsdocs-theme-toggle></fsdocs-theme-toggle>
+    </div>
+</header>
+<aside id="fsdocs-main-menu">
+    <ul class="menu">
+        <li class="nav-header">Links</li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/tomcl/issie/blob/master/LICENSE.md">License</a>
+        </li>
+        <li class="nav-item"><a class="nav-link"
+                                href="https://github.com/tomcl/issie/releases/">Release
+            Notes</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/tomcl/issie/tree/master/">Source
+            Repository</a></li>
+        <li class="nav-header ">
+  Documentation
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/verilogComp.html">
+    Verilog Component
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/contact.html">
+    Contact
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/userGuide.html">
+    User Guide
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/coolFeatures.html">
+    Features
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/ReadMeCodeAnalysis.html">
+    DrawBlock Analysis
+
+  </a>
+</li>             
+<li class="nav-header ">
+  Updates
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2021-07-04-Issie-v2-1-0.html">
+    ISSIE v2.1.0
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-05-04-Issie-v3-0-0.html">
+    ISSIE v3.0.0
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-09-20-Issie-v3-0-1.html">
+    ISSIE v3.0.1
+  </a>
+</li>             
+<li class="nav-item ">
+  <a class="nav-link" href="/issie/updates/2022-12-25-Issie-v3-0-9.html">
+    ISSIE v3.0.9  - Happy Christmas!
+  </a>
+</li>
+        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/issie/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+    </ul>
+</aside>
+<main>
+    <div id="content">
+        <div>
+  <h2>
+    Msg Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/issie/reference/global.html">
+        global
+      </a>
+    </dt>
+    <dt>
+      Assembly: Renderer.dll
+    </dt>
+    <dt>
+      Parent Module: 
+      <a href="/issie/reference/drawmodeltype-sheett.html">
+        SheetT
+      </a>
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Union cases
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Union case
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2891', 2891)" onmouseover="showTip(event, '2891', 2891)">
+                <p>
+                  <a id="AddNotConnected">
+                    <a href="#AddNotConnected">
+                      <code><span>AddNotConnected(<span><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span>,&#32;port,&#32;pos,&#32;rotation</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2891">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AddNotConnected(<span><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span>,&#32;port,&#32;pos,&#32;rotation</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item1
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        port
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-port.html">Port</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pos
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        rotation
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-rotation.html">Rotation</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item1
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  port
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-port.html">Port</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pos
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rotation
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-rotation.html">Rotation</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2892', 2892)" onmouseover="showTip(event, '2892', 2892)">
+                <p>
+                  <a id="Arrangement">
+                    <a href="#Arrangement">
+                      <code><span>Arrangement&#32;<a href="/issie/reference/drawmodeltype-sheett-arrange.html">Arrange</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2892">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Arrangement&#32;<a href="/issie/reference/drawmodeltype-sheett-arrange.html">Arrange</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-sheett-arrange.html">Arrange</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-sheett-arrange.html">Arrange</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2893', 2893)" onmouseover="showTip(event, '2893', 2893)">
+                <p>
+                  <a id="BeautifySheet">
+                    <a href="#BeautifySheet">
+                      <code><span>BeautifySheet</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2893">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>BeautifySheet</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L599-599" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2894', 2894)" onmouseover="showTip(event, '2894', 2894)">
+                <p>
+                  <a id="CheckAutomaticScrolling">
+                    <a href="#CheckAutomaticScrolling">
+                      <code><span>CheckAutomaticScrolling</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2894">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>CheckAutomaticScrolling</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L552-552" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2895', 2895)" onmouseover="showTip(event, '2895', 2895)">
+                <p>
+                  <a id="ClosePopup">
+                    <a href="#ClosePopup">
+                      <code><span>ClosePopup</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2895">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ClosePopup</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L556-556" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2896', 2896)" onmouseover="showTip(event, '2896', 2896)">
+                <p>
+                  <a id="ColourSelection">
+                    <a href="#ColourSelection">
+                      <code><span>ColourSelection(<span>compIds,&#32;connIds,&#32;colour</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2896">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ColourSelection(<span>compIds,&#32;connIds,&#32;colour</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        compIds
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-componentid.html">ComponentId</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        connIds
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        colour
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-highlightcolor.html">HighLightColor</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  compIds
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-componentid.html">ComponentId</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  connIds
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  colour
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-highlightcolor.html">HighLightColor</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2897', 2897)" onmouseover="showTip(event, '2897', 2897)">
+                <p>
+                  <a id="DebugConnect">
+                    <a href="#DebugConnect">
+                      <code><span>DebugConnect</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2897">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugConnect</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L589-589" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2898', 2898)" onmouseover="showTip(event, '2898', 2898)">
+                <p>
+                  <a id="DebugContinue">
+                    <a href="#DebugContinue">
+                      <code><span>DebugContinue</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2898">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugContinue</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L592-592" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2899', 2899)" onmouseover="showTip(event, '2899', 2899)">
+                <p>
+                  <a id="DebugDisconnect">
+                    <a href="#DebugDisconnect">
+                      <code><span>DebugDisconnect</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2899">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugDisconnect</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L590-590" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2900', 2900)" onmouseover="showTip(event, '2900', 2900)">
+                <p>
+                  <a id="DebugPause">
+                    <a href="#DebugPause">
+                      <code><span>DebugPause</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2900">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugPause</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L593-593" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2901', 2901)" onmouseover="showTip(event, '2901', 2901)">
+                <p>
+                  <a id="DebugRead">
+                    <a href="#DebugRead">
+                      <code><span>DebugRead&#32;parts</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2901">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugRead&#32;parts</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        parts
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  parts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2902', 2902)" onmouseover="showTip(event, '2902', 2902)">
+                <p>
+                  <a id="DebugSingleStep">
+                    <a href="#DebugSingleStep">
+                      <code><span>DebugSingleStep</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2902">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugSingleStep</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L585-585" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2903', 2903)" onmouseover="showTip(event, '2903', 2903)">
+                <p>
+                  <a id="DebugStepAndRead">
+                    <a href="#DebugStepAndRead">
+                      <code><span>DebugStepAndRead&#32;parts</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2903">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugStepAndRead&#32;parts</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        parts
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  parts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2904', 2904)" onmouseover="showTip(event, '2904', 2904)">
+                <p>
+                  <a id="DebugUpdateMapping">
+                    <a href="#DebugUpdateMapping">
+                      <code><span>DebugUpdateMapping&#32;<span>string&#32;array</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2904">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DebugUpdateMapping&#32;<span>string&#32;array</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span>string&#32;array</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span>string&#32;array</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2905', 2905)" onmouseover="showTip(event, '2905', 2905)">
+                <p>
+                  <a id="DoNothing">
+                    <a href="#DoNothing">
+                      <code><span>DoNothing</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2905">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoNothing</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L553-553" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2906', 2906)" onmouseover="showTip(event, '2906', 2906)">
+                <p>
+                  <a id="FinishedCompilationStage">
+                    <a href="#FinishedCompilationStage">
+                      <code><span>FinishedCompilationStage</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2906">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>FinishedCompilationStage</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L584-584" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2907', 2907)" onmouseover="showTip(event, '2907', 2907)">
+                <p>
+                  <a id="Flip">
+                    <a href="#Flip">
+                      <code><span>Flip&#32;<a href="/issie/reference/drawmodeltype-symbolt-fliptype.html">FlipType</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2907">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Flip&#32;<a href="/issie/reference/drawmodeltype-symbolt-fliptype.html">FlipType</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-symbolt-fliptype.html">FlipType</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-symbolt-fliptype.html">FlipType</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2908', 2908)" onmouseover="showTip(event, '2908', 2908)">
+                <p>
+                  <a id="FlushCommandStack">
+                    <a href="#FlushCommandStack">
+                      <code><span>FlushCommandStack</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2908">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>FlushCommandStack</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L561-561" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2909', 2909)" onmouseover="showTip(event, '2909', 2909)">
+                <p>
+                  <a id="InitialiseCreateComponent">
+                    <a href="#InitialiseCreateComponent">
+                      <code><span>InitialiseCreateComponent(<span><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span>,&#32;<a href="/issie/reference/commontypes-componenttype.html">ComponentType</a>,&#32;string</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2909">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>InitialiseCreateComponent(<span><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span>,&#32;<a href="/issie/reference/commontypes-componenttype.html">ComponentType</a>,&#32;string</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item1
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Item2
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-componenttype.html">ComponentType</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Item3
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item1
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-loadedcomponent.html">LoadedComponent</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item2
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-componenttype.html">ComponentType</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item3
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2910', 2910)" onmouseover="showTip(event, '2910', 2910)">
+                <p>
+                  <a id="IssieInterface">
+                    <a href="#IssieInterface">
+                      <code><span>IssieInterface&#32;<a href="/issie/reference/drawmodeltype-sheett-issieinterfacemsg.html">IssieInterfaceMsg</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2910">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>IssieInterface&#32;<a href="/issie/reference/drawmodeltype-sheett-issieinterfacemsg.html">IssieInterfaceMsg</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-sheett-issieinterfacemsg.html">IssieInterfaceMsg</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-sheett-issieinterfacemsg.html">IssieInterfaceMsg</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2911', 2911)" onmouseover="showTip(event, '2911', 2911)">
+                <p>
+                  <a id="KeepZoomCentered">
+                    <a href="#KeepZoomCentered">
+                      <code><span>KeepZoomCentered&#32;<a href="/issie/reference/commontypes-xypos.html">XYPos</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2911">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>KeepZoomCentered&#32;<a href="/issie/reference/commontypes-xypos.html">XYPos</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2912', 2912)" onmouseover="showTip(event, '2912', 2912)">
+                <p>
+                  <a id="KeyPress">
+                    <a href="#KeyPress">
+                      <code><span>KeyPress&#32;<a href="/issie/reference/drawmodeltype-sheett-keyboardmsg.html">KeyboardMsg</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2912">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>KeyPress&#32;<a href="/issie/reference/drawmodeltype-sheett-keyboardmsg.html">KeyboardMsg</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-sheett-keyboardmsg.html">KeyboardMsg</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-sheett-keyboardmsg.html">KeyboardMsg</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2913', 2913)" onmouseover="showTip(event, '2913', 2913)">
+                <p>
+                  <a id="ManualKeyDown">
+                    <a href="#ManualKeyDown">
+                      <code><span>ManualKeyDown&#32;string</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2913">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ManualKeyDown&#32;string</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2914', 2914)" onmouseover="showTip(event, '2914', 2914)">
+                <p>
+                  <a id="ManualKeyUp">
+                    <a href="#ManualKeyUp">
+                      <code><span>ManualKeyUp&#32;string</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2914">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ManualKeyUp&#32;string</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2915', 2915)" onmouseover="showTip(event, '2915', 2915)">
+                <p>
+                  <a id="MouseMsg">
+                    <a href="#MouseMsg">
+                      <code><span>MouseMsg&#32;<a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2915">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MouseMsg&#32;<a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2916', 2916)" onmouseover="showTip(event, '2916', 2916)">
+                <p>
+                  <a id="MovePort">
+                    <a href="#MovePort">
+                      <code><span>MovePort&#32;<a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2916">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MovePort&#32;<a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawhelpers-mouset.html">MouseT</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2917', 2917)" onmouseover="showTip(event, '2917', 2917)">
+                <p>
+                  <a id="OnDebugRead">
+                    <a href="#OnDebugRead">
+                      <code><span>OnDebugRead(<span>data,&#32;viewer</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2917">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OnDebugRead(<span>data,&#32;viewer</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        viewer
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  viewer
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2918', 2918)" onmouseover="showTip(event, '2918', 2918)">
+                <p>
+                  <a id="PortMovementEnd">
+                    <a href="#PortMovementEnd">
+                      <code><span>PortMovementEnd</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2918">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PortMovementEnd</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L566-566" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2919', 2919)" onmouseover="showTip(event, '2919', 2919)">
+                <p>
+                  <a id="PortMovementStart">
+                    <a href="#PortMovementStart">
+                      <code><span>PortMovementStart</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2919">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PortMovementStart</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L565-565" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2920', 2920)" onmouseover="showTip(event, '2920', 2920)">
+                <p>
+                  <a id="ReorderPorts">
+                    <a href="#ReorderPorts">
+                      <code><span>ReorderPorts</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2920">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ReorderPorts</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L595-595" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2921', 2921)" onmouseover="showTip(event, '2921', 2921)">
+                <p>
+                  <a id="ResetModel">
+                    <a href="#ResetModel">
+                      <code><span>ResetModel</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2921">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ResetModel</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L562-562" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2922', 2922)" onmouseover="showTip(event, '2922', 2922)">
+                <p>
+                  <a id="ResetSelection">
+                    <a href="#ResetSelection">
+                      <code><span>ResetSelection</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2922">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ResetSelection</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L567-567" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2923', 2923)" onmouseover="showTip(event, '2923', 2923)">
+                <p>
+                  <a id="Rotate">
+                    <a href="#Rotate">
+                      <code><span>Rotate&#32;<a href="/issie/reference/commontypes-rotation.html">Rotation</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2923">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Rotate&#32;<a href="/issie/reference/commontypes-rotation.html">Rotation</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-rotation.html">Rotation</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-rotation.html">Rotation</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2924', 2924)" onmouseover="showTip(event, '2924', 2924)">
+                <p>
+                  <a id="RotateLabels">
+                    <a href="#RotateLabels">
+                      <code><span>RotateLabels</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2924">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RotateLabels</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L574-574" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2925', 2925)" onmouseover="showTip(event, '2925', 2925)">
+                <p>
+                  <a id="SaveSymbols">
+                    <a href="#SaveSymbols">
+                      <code><span>SaveSymbols</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2925">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SaveSymbols</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L578-578" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2926', 2926)" onmouseover="showTip(event, '2926', 2926)">
+                <p>
+                  <a id="SelectWires">
+                    <a href="#SelectWires">
+                      <code><span>SelectWires&#32;<span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2926">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SelectWires&#32;<span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2927', 2927)" onmouseover="showTip(event, '2927', 2927)">
+                <p>
+                  <a id="SetDebugDevice">
+                    <a href="#SetDebugDevice">
+                      <code><span>SetDebugDevice&#32;string</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2927">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SetDebugDevice&#32;string</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2928', 2928)" onmouseover="showTip(event, '2928', 2928)">
+                <p>
+                  <a id="SetPopupDialogInt">
+                    <a href="#SetPopupDialogInt">
+                      <code><span>SetPopupDialogInt&#32;<span>int&#32;option</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2928">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SetPopupDialogInt&#32;<span>int&#32;option</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span>int&#32;option</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span>int&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2929', 2929)" onmouseover="showTip(event, '2929', 2929)">
+                <p>
+                  <a id="SetPopupDialogText">
+                    <a href="#SetPopupDialogText">
+                      <code><span>SetPopupDialogText&#32;<span>string&#32;option</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2929">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SetPopupDialogText&#32;<span>string&#32;option</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span>string&#32;option</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span>string&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2930', 2930)" onmouseover="showTip(event, '2930', 2930)">
+                <p>
+                  <a id="SetSpinner">
+                    <a href="#SetSpinner">
+                      <code><span>SetSpinner&#32;bool</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2930">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SetSpinner&#32;bool</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2931', 2931)" onmouseover="showTip(event, '2931', 2931)">
+                <p>
+                  <a id="SetWireModel">
+                    <a href="#SetWireModel">
+                      <code><span>SetWireModel&#32;<a href="/issie/reference/drawmodeltype-buswiret-model.html">Model</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2931">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SetWireModel&#32;<a href="/issie/reference/drawmodeltype-buswiret-model.html">Model</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-buswiret-model.html">Model</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-buswiret-model.html">Model</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2932', 2932)" onmouseover="showTip(event, '2932', 2932)">
+                <p>
+                  <a id="SheetBatch">
+                    <a href="#SheetBatch">
+                      <code><span>SheetBatch&#32;<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;list</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2932">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>SheetBatch&#32;<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;list</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2933', 2933)" onmouseover="showTip(event, '2933', 2933)">
+                <p>
+                  <a id="ShowPopup">
+                    <a href="#ShowPopup">
+                      <code><span>ShowPopup&#32;<span><span>(<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span>)</span>&#32;->&#32;<a href="/issie/reference/drawmodeltype-sheett-popupdialogdata.html">PopupDialogData</a>&#32;->&#32;<a href="https://learn.microsoft.com/dotnet/api/fable.react.reactelement">ReactElement</a></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2933">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ShowPopup&#32;<span><span>(<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span>)</span>&#32;->&#32;<a href="/issie/reference/drawmodeltype-sheett-popupdialogdata.html">PopupDialogData</a>&#32;->&#32;<a href="https://learn.microsoft.com/dotnet/api/fable.react.reactelement">ReactElement</a></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><span><span>(<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span>)</span>&#32;->&#32;<a href="/issie/reference/drawmodeltype-sheett-popupdialogdata.html">PopupDialogData</a>&#32;->&#32;<a href="https://learn.microsoft.com/dotnet/api/fable.react.reactelement">ReactElement</a></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><span><span>(<span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span>)</span>&#32;->&#32;<a href="/issie/reference/drawmodeltype-sheett-popupdialogdata.html">PopupDialogData</a>&#32;->&#32;<a href="https://learn.microsoft.com/dotnet/api/fable.react.reactelement">ReactElement</a></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2934', 2934)" onmouseover="showTip(event, '2934', 2934)">
+                <p>
+                  <a id="StartCompilationStage">
+                    <a href="#StartCompilationStage">
+                      <code><span>StartCompilationStage(<span><a href="/issie/reference/drawmodeltype-sheett-compilationstagelabel.html">CompilationStageLabel</a>,&#32;path,&#32;name,&#32;profile</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2934">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StartCompilationStage(<span><a href="/issie/reference/drawmodeltype-sheett-compilationstagelabel.html">CompilationStageLabel</a>,&#32;path,&#32;name,&#32;profile</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item1
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-sheett-compilationstagelabel.html">CompilationStageLabel</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        path
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        name
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        profile
+                      </b>
+                      :
+                      <code><a href="/issie/reference/verilog-compilationprofile.html">CompilationProfile</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item1
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-sheett-compilationstagelabel.html">CompilationStageLabel</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  path
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  name
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  profile
+                </span>
+                :
+                <code><a href="/issie/reference/verilog-compilationprofile.html">CompilationProfile</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2935', 2935)" onmouseover="showTip(event, '2935', 2935)">
+                <p>
+                  <a id="StartCompiling">
+                    <a href="#StartCompiling">
+                      <code><span>StartCompiling(<span>path,&#32;name,&#32;profile</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2935">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StartCompiling(<span>path,&#32;name,&#32;profile</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        path
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        name
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        profile
+                      </b>
+                      :
+                      <code><a href="/issie/reference/verilog-compilationprofile.html">CompilationProfile</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  path
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  name
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  profile
+                </span>
+                :
+                <code><a href="/issie/reference/verilog-compilationprofile.html">CompilationProfile</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2936', 2936)" onmouseover="showTip(event, '2936', 2936)">
+                <p>
+                  <a id="StopCompilation">
+                    <a href="#StopCompilation">
+                      <code><span>StopCompilation</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2936">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StopCompilation</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L582-582" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2937', 2937)" onmouseover="showTip(event, '2937', 2937)">
+                <p>
+                  <a id="TestPortPosition">
+                    <a href="#TestPortPosition">
+                      <code><span>TestPortPosition</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2937">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TestPortPosition</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L597-597" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2938', 2938)" onmouseover="showTip(event, '2938', 2938)">
+                <p>
+                  <a id="TestSmartChannel">
+                    <a href="#TestSmartChannel">
+                      <code><span>TestSmartChannel</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2938">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TestSmartChannel</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L596-596" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2939', 2939)" onmouseover="showTip(event, '2939', 2939)">
+                <p>
+                  <a id="TickCompilation">
+                    <a href="#TickCompilation">
+                      <code><span>TickCompilation&#32;float</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2939">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TickCompilation&#32;float</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2940', 2940)" onmouseover="showTip(event, '2940', 2940)">
+                <p>
+                  <a id="ToggleGrid">
+                    <a href="#ToggleGrid">
+                      <code><span>ToggleGrid</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2940">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ToggleGrid</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L542-542" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2941', 2941)" onmouseover="showTip(event, '2941', 2941)">
+                <p>
+                  <a id="ToggleNet">
+                    <a href="#ToggleNet">
+                      <code><span>ToggleNet&#32;<a href="/issie/reference/commontypes-canvasstate.html">CanvasState</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2941">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ToggleNet&#32;<a href="/issie/reference/commontypes-canvasstate.html">CanvasState</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-canvasstate.html">CanvasState</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-canvasstate.html">CanvasState</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2942', 2942)" onmouseover="showTip(event, '2942', 2942)">
+                <p>
+                  <a id="ToggleSnapToNet">
+                    <a href="#ToggleSnapToNet">
+                      <code><span>ToggleSnapToNet</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2942">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ToggleSnapToNet</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L598-598" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2943', 2943)" onmouseover="showTip(event, '2943', 2943)">
+                <p>
+                  <a id="UpdateBoundingBoxes">
+                    <a href="#UpdateBoundingBoxes">
+                      <code><span>UpdateBoundingBoxes</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2943">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>UpdateBoundingBoxes</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="https://github.com/tomcl/issie/tree/master/tree/master/src/Renderer/Model/DrawModelType.fs#L545-545" class="fsdocs-source-link" title="Source on GitHub">
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2944', 2944)" onmouseover="showTip(event, '2944', 2944)">
+                <p>
+                  <a id="UpdateScrollPos">
+                    <a href="#UpdateScrollPos">
+                      <code><span>UpdateScrollPos&#32;<a href="/issie/reference/commontypes-xypos.html">XYPos</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2944">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>UpdateScrollPos&#32;<a href="/issie/reference/commontypes-xypos.html">XYPos</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2945', 2945)" onmouseover="showTip(event, '2945', 2945)">
+                <p>
+                  <a id="UpdateScrollPosFromCanvas">
+                    <a href="#UpdateScrollPosFromCanvas">
+                      <code><span>UpdateScrollPosFromCanvas(<span>sequence,&#32;pos,&#32;dispatch</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2945">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>UpdateScrollPosFromCanvas(<span>sequence,&#32;pos,&#32;dispatch</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sequence
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pos
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dispatch
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sequence
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pos
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-xypos.html">XYPos</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dispatch
+                </span>
+                :
+                <code><span><a href="/issie/reference/drawmodeltype-sheett-msg.html">Msg</a>&#32;->&#32;<a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-unit">Unit</a></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2946', 2946)" onmouseover="showTip(event, '2946', 2946)">
+                <p>
+                  <a id="UpdateSelectedWires">
+                    <a href="#UpdateSelectedWires">
+                      <code><span>UpdateSelectedWires(<span><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span>,&#32;bool</span>)</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2946">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>UpdateSelectedWires(<span><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span>,&#32;bool</span>)</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item1
+                      </b>
+                      :
+                      <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Item2
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item1
+                </span>
+                :
+                <code><span><a href="/issie/reference/commontypes-connectionid.html">ConnectionId</a>&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item2
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2947', 2947)" onmouseover="showTip(event, '2947', 2947)">
+                <p>
+                  <a id="UpdateSingleBoundingBox">
+                    <a href="#UpdateSingleBoundingBox">
+                      <code><span>UpdateSingleBoundingBox&#32;<a href="/issie/reference/commontypes-componentid.html">ComponentId</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2947">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>UpdateSingleBoundingBox&#32;<a href="/issie/reference/commontypes-componentid.html">ComponentId</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/commontypes-componentid.html">ComponentId</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/commontypes-componentid.html">ComponentId</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2948', 2948)" onmouseover="showTip(event, '2948', 2948)">
+                <p>
+                  <a id="Wire">
+                    <a href="#Wire">
+                      <code><span>Wire&#32;<a href="/issie/reference/drawmodeltype-buswiret-msg.html">Msg</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2948">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Wire&#32;<a href="/issie/reference/drawmodeltype-buswiret-msg.html">Msg</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-buswiret-msg.html">Msg</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-buswiret-msg.html">Msg</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2949', 2949)" onmouseover="showTip(event, '2949', 2949)">
+                <p>
+                  <a id="WireType">
+                    <a href="#WireType">
+                      <code><span>WireType&#32;<a href="/issie/reference/drawmodeltype-sheett-wiretypemsg.html">WireTypeMsg</a></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2949">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>WireType&#32;<a href="/issie/reference/drawmodeltype-sheett-wiretypemsg.html">WireTypeMsg</a></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code><a href="/issie/reference/drawmodeltype-sheett-wiretypemsg.html">WireTypeMsg</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code><a href="/issie/reference/drawmodeltype-sheett-wiretypemsg.html">WireTypeMsg</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+        
+    </div>
+</main>
+<aside id="fsdocs-page-menu">
+    <p id="on-this-page">On this page</p>
+    <div class="empty"></div>
+</aside>
+<dialog>
+    <input type="search" placeholder="Search docs" />
+    <div class="results">
+        <ul></ul>
+        <p class="empty">Type something to start searching.</p>
+    </div>
+</dialog>
+<script type="module" src="/issie/content/fsdocs-tips.js"></script>
+<script type="module" src="/issie/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="/issie/content/fsdocs-theme.js"></script>
+<script type="module" src="/issie/content/fsdocs-search.js"></script>
+
+</body>
+</html>
